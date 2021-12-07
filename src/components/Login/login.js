@@ -64,7 +64,7 @@ const Login = () => {
 	  const onSubmit = data => {
 		 const email = data.email;
 		 const password = data.password;
-		 fetch("http://localhost:5000/login" ,{
+		 fetch("https://mighty-plains-92386.herokuapp.com/login" ,{
 			 method : "POST",
 			 headers: {"content-type": "application/json"},
 			 body: JSON.stringify({email , password})
@@ -96,6 +96,7 @@ const Login = () => {
 
 					<div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
 						<h3 class="pt-4 text-2xl text-center">Hi Please Sign In</h3>
+						<h3 style={{textAlign:"center"}}>admin: test@test.com , pass: #2021dev</h3>
 						<form onSubmit={handleSubmit(onSubmit)} class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
 							<div class="mb-4">
 								<label class="block mb-2 text-sm font-bold text-gray-700" for="username">

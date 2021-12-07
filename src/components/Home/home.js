@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import Header from "../Header/header";
-import Slidebar from "../Slidebar/slidebar";
 import SideBar from "../Sidebar/sidebar";
 import News from '../News/news';
 import Footer from '../Footer/footer';
@@ -29,10 +28,9 @@ const Home = () => {
 
 
     return (
-        <div class="container">
+        <div className="container">
             <Header toggle={toggle}></Header>
             <Dropdown isOpen={isOpen} toggle={toggle} />
-            <Slidebar></Slidebar>
             <News></News>
             <Footer></Footer>
         </div>

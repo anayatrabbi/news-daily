@@ -25,7 +25,7 @@ const DashBoard = () => {
         formData.append('author' , info.author)
         formData.append('catagory' , info.catagory)
 
-        fetch('http://localhost:5000/addNews', {
+        fetch('https://mighty-plains-92386.herokuapp.com/addNews', {
             method: 'POST',
             body: formData
         })

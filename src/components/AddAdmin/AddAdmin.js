@@ -21,7 +21,7 @@ const AddAdmin = () => {
         formData.append('password', info.password);
         
 
-        fetch('http://localhost:5000/addAdmin', {
+        fetch('https://mighty-plains-92386.herokuapp.com/addAdmin', {
             method: 'POST',
             body: formData
         })
